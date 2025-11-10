@@ -1,10 +1,12 @@
 # <Project Title>
 
-> One-liner: what this repo demonstrates (e.g., “Azure Sentinel detections + incident write-ups”)
+Vulnerability Management Repo
 
 ## 🎯 Objectives
-- What you set out to learn/build
-- Which security domain(s) this covers (SIEM, IR, GRC, Cloud, etc.)
+- Nmap scans
+- OpenVAS reports
+- Vulnerability Assessment template
+- Risk Matrix
 
 ## 🧪 What’s Inside
 - `docs/` – reports, playbooks, baselines, diagrams
