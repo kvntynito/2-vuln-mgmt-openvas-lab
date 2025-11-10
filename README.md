@@ -30,20 +30,25 @@ A simple, reproducible home lab was used to perform scans:
 OpenVAS (GVM) was installed on Ubuntu Server, and Nmap was run from both Kali and Windows.
 
 ## ▶️ How to Run
-1. Run Nmap enumeration
+**1. Run Nmap enumeration**
     - Upload your results into the lab/ folder.
 
-2. Run OpenVAS full scan
+**2. Run OpenVAS full scan**
 Steps:
-  1. Launch GVM web console
-  2. Create new Full and Fast task
-  3. Add target IP(s)
-  4. Run scan
-  5. Export results as: PDF / CSV / XML
 
-     - Upload exported files to the lab/ folder.
+     1st - Launch GVM web console
 
-3. Perform vulnerability analysis
+     2nd - Create new Full and Fast task
+
+     3rd - Add target IP(s)
+
+     4th - Run scan
+
+     5th - Export results as: PDF / CSV / XML
+
+Upload exported files to the lab/ folder.
+
+**3. Perform vulnerability analysis**
 Populate:
 - docs/Vulnerability_Assessment_TEMPLATE.md
 - docs/Risk_Matrix_TEMPLATE.csv
@@ -52,11 +57,17 @@ Use CVSS scores, descriptions, and recommended remediation from the scanner.
 
 ## 📊 Deliverables
 ✅ Nmap scans
+
 ✅ GVM/OpenVAS vulnerability reports
+
 ✅ Risk Matrix with likelihood/impact scoring
+
 ✅ Standardized vulnerability assessment report
+
 ✅ Network diagram (optional but recommended)
+
 ✅ Screenshots of findings
+
 ✅ Remediation plan
 
 ## 🧠 What I Learned
