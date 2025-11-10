@@ -9,13 +9,13 @@ It includes scan outputs, analysis reports, risk matrices, and remediation plann
 - Vulnerability Assessment template
 - Risk Matrix
 
-## 🧪 What’s Inside
+## 📁 What’s Inside
 - `docs/` – reports, playbooks, baselines, diagrams
 - `scripts/` – Python/PowerShell/Bash utilities
 - `lab/` – sample logs, datasets, IaC
 - `.github/` – issue/PR templates
 
-## 🏗️ Lab Setup (Quick Start)
+## 🧪 Lab Setup (Quick Start)
 A simple, reproducible home lab was used to perform scans:
 - **Host:** Proxmox, VMware, Hyper-V, or VirtualBox
 - **Targets:**
