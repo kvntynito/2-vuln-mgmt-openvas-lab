@@ -10,28 +10,50 @@ It includes scan outputs, analysis reports, risk matrices, and remediation plann
 - Risk Matrix
 
 ## 📁 What’s Inside
-- `docs/` – reports, playbooks, baselines, diagrams
+- `docs/` – reports
 - `scripts/` – Python/PowerShell/Bash utilities
-- `lab/` – sample logs, datasets, IaC
+- `lab/` – Scan outputs (Nmap, GVM), screenshots, exports
 - `.github/` – issue/PR templates
 
 ## 🧪 Lab Setup (Quick Start)
 A simple, reproducible home lab was used to perform scans:
-- **Host:** Proxmox, VMware, Hyper-V, or VirtualBox
-- **Targets:**
+
+**Host:** Proxmox, VMware, Hyper-V, or VirtualBox
+
+**Targets:**
   - Metasploitable2
   - DVWA / WebGoat
   - Windows Server 2019 (unpatched)
   - Ubuntu Server with outdated packages
-- **Network:**
+
+**Network:**
   - VLANs or isolated “Security Testing” network
   - pfSense/OPNsense for segmentation
+  - No outbound internet access from vulnerable targets 
 
 OpenVAS (GVM) was installed on Ubuntu Server, and Nmap was run from both Kali and Windows.
 
+**Tools**
+
+- Nmap 7.x (Kali Linux & Windows)
+- OpenVAS/GVM running on Ubuntu Server
+- CVSS v3.1 for scoring
+- NIST 800-40r4 as reference for remediation workflow
+
+
+
 ## ▶️ How to Run
 **1. Run Nmap enumeration**
-    - Upload your results into the lab/ folder.
+
+Run:
+
+nmap -sS -sV -O 10.10.10.0/24
+nmap -A -T4 -oA discovery-scan
+
+
+Upload scan results into:
+
+lab/nmap/
 
 **2. Run OpenVAS full scan**
 Steps:
@@ -46,14 +68,15 @@ Steps:
 
      5th - Export results as: PDF / CSV / XML
 
-Upload exported files to the lab/ folder.
+     6th - Upload exported fiels to: lab/openvas/
+
 
 **3. Perform vulnerability analysis**
 Populate:
 - docs/Vulnerability_Assessment_TEMPLATE.md
 - docs/Risk_Matrix_TEMPLATE.csv
 
-Use CVSS scores, descriptions, and recommended remediation from the scanner.
+Use CVSS scores, vulnerability descriptions, and recommended remediation from the scanner.
 
 ## 📊 Deliverables
 ✅ Nmap scans
@@ -71,7 +94,7 @@ Use CVSS scores, descriptions, and recommended remediation from the scanner.
 ✅ Remediation plan
 
 ## 🧠 What I Learned
-- Bullet points of concepts/skills you gained - Write what you learned about scanning, false positives, CVSS.
+
 - How to enumerate systems using Nmap
 - How to run authenticated/unauthenticated scans
 - How to interpret vulnerability findings vs. false positives
