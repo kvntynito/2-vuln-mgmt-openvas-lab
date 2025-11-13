@@ -10,10 +10,10 @@ It includes scan outputs, analysis reports, risk matrices, and remediation plann
 - Risk Matrix
 
 ## 📁 What’s Inside
-- `docs/` – reports
-- `scripts/` – Python/PowerShell/Bash utilities
-- `lab/` – Scan outputs (Nmap, GVM), screenshots, exports
-- `.github/` – issue/PR templates
+- `docs/`     – reports
+- `scripts/`  – Python/PowerShell/Bash utilities
+- `lab/`      – Scan outputs (Nmap, GVM), screenshots, exports
+- `.github/`  – issue/PR templates
 
 ## 🧪 Lab Setup (Quick Start)
 A simple, reproducible home lab was used to perform scans:
