@@ -1,4 +1,4 @@
-# <Project Title>
+## Vulnerability Management
 
 This project demonstrates hands-on vulnerability management using Nmap and OpenVAS/GVM.
 It includes scan outputs, analysis reports, risk matrices, and remediation planning based on real test environments.
