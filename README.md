@@ -26,6 +26,17 @@ A simple, reproducible home lab was used to perform scans:
   - Windows Server 2019 (unpatched)
   - Ubuntu Server with outdated packages
 
+**Security Assessment Tools:**
+- Kali Linux (or Ubuntu Desktop)
+  - Runs Nmap
+  - Browses DVWA/WebGoat
+  - Performs manual verification (curl, nikto, etc.)
+
+- OpenVAS/GVM Server
+  - Runs full vulnerability assessments
+  - Gives you scan results, CVEs, severity ratings
+  - Lets you export PDF reports for the project
+
 **Network:**
   - VLANs or isolated “Security Testing” network
   - pfSense/OPNsense for segmentation
