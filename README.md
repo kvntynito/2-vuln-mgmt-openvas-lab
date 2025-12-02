@@ -28,14 +28,13 @@ These systems are intentionally configured with known vulnerabilities for scanni
   - Ubuntu Server with outdated packages
 
 **Security Assessment Tools:**
-Kali Linux (or Ubuntu Desktop)
-Used for manual testing and validation during the vulnerability-management workflow.
+
+Kali Linux (or Ubuntu Desktop) - Used for manual testing and validation during the vulnerability-management workflow.
   - Runs Nmap
   - Browses DVWA/WebGoat
   - Performs manual verification (curl, nikto, etc.)
 
-  OpenVAS/GVM Server
-  Dedicated vulnerability scanning platform for automated assessment.
+  OpenVAS/GVM Server- dedicated vulnerability scanning platform for automated assessment.
   - Runs full vulnerability assessments
   - Gives you scan results, CVEs, severity ratings
   - Lets you export PDF reports for the project
